@@ -1,0 +1,83 @@
+* {
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Roboto', serif;
+}
+
+ul {
+  list-style: none;
+}
+
+p {
+  font-family: 'Roboto', serif;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  font-family: 'Roboto', serif;
+}
+
+.container {
+  width: 100%;
+  margin-right: auto;
+  margin-left: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.header {
+  background-color: black;
+}
+
+.header_box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-top: 25px;
+  padding-bottom: 25px;
+  margin-left: 40px;
+  margin-right: 40px;
+}
+
+.header_box_logo {
+  margin-right: 22.5%;
+  color: #fff;
+}
+
+.header_logo {
+  width: 150px;
+  height: 100px;
+}
+
+.mafia {
+  font-size: 36px;
+  font-family: "Rubik Dirt", sans-serif;
+  font-weight: 300;
+}
+
+.header_box_something {
+  color: #fff;
+  margin-right: 45%;
+}
+
+.header_box_regestration {
+  color: #fff;
+}

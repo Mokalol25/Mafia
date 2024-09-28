@@ -1,0 +1,33 @@
+.header {
+    background-color: black;
+}
+.header_box {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    margin-left: 40px;
+    margin-right: 40px;
+}
+.header_box_logo {
+    margin-right: 22.5%;
+    color: #fff;
+}
+.header_logo {
+    width: 150px;
+    height: 100px;
+}
+.mafia {
+    font-size: 36px;
+    font-family: "Rubik Dirt", sans-serif;
+    font-weight: 300;
+}
+.header_box_something {
+    color: #fff;
+    margin-right: 45%;
+}
+.header_box_regestration {
+    color: #fff;
+}
