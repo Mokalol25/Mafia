@@ -1,0 +1,61 @@
+.hero {
+    padding-top: 130px;
+    padding-bottom: 50px;
+    background-color: rgb(214, 207, 207);
+}
+.hero_box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 100px; /* Відстань між колом і зображенням */
+}
+
+.hero_circle {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(186, 32, 32);
+    border-radius: 50%; /* Робить блок круглим */
+    width: 600px; /* Розмір кола */
+    height: 600px;
+}
+
+.circle_text_box {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.circle_text_f_color {
+    color: white; /* Основний колір тексту */
+    font-size: 68px;
+    font-weight: bold;
+    font-family: "Rubik Dirt", sans-serif;
+    font-weight: 300;
+}
+
+.circle_text_c_color {
+    font-family: "Rubik Dirt", sans-serif;
+    font-weight: 300;
+    position: absolute;
+    top: 0;
+    left: 0;
+    color: black; /* Колір накладеного тексту */
+    font-size: 68px;
+    font-weight: bold;
+    opacity: 0.5;
+    margin-left: 7.5px;
+    margin-top: 12.5px; /* Налаштуй прозорість для створення ефекту накладання */
+}
+
+.hero_image_box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero_image {
+    width: 600px; /* Розмір зображення */
+    height: auto;
+}

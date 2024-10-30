@@ -1,3 +1,4 @@
+@charset "UTF-8";
 * {
   margin: 0;
   -webkit-box-sizing: border-box;
@@ -37,7 +38,16 @@ h4 {
 }
 
 .header {
-  background-color: black;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+  -webkit-backdrop-filter: blur(20px);
+          backdrop-filter: blur(20px);
+  -webkit-box-shadow: 0px 0px 30px rgba(227, 228, 237, 0.37);
+          box-shadow: 0px 0px 30px rgba(227, 228, 237, 0.37);
+  border: 2px solid rgba(255, 255, 255, 0.18);
 }
 
 .header_box {
@@ -51,15 +61,15 @@ h4 {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding-top: 25px;
-  padding-bottom: 25px;
+  padding-top: 10px;
+  padding-bottom: 10px;
   margin-left: 40px;
   margin-right: 40px;
 }
 
 .header_box_logo {
   margin-right: 22.5%;
-  color: #fff;
+  fill: #000;
 }
 
 .header_logo {
@@ -74,10 +84,99 @@ h4 {
 }
 
 .header_box_something {
-  color: #fff;
   margin-right: 45%;
 }
 
-.header_box_regestration {
-  color: #fff;
+.hero {
+  padding-top: 130px;
+  padding-bottom: 50px;
+  background-color: #d6cfcf;
+}
+
+.hero_box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 100px;
+  /* Відстань між колом і зображенням */
+}
+
+.hero_circle {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #ba2020;
+  border-radius: 50%;
+  /* Робить блок круглим */
+  width: 600px;
+  /* Розмір кола */
+  height: 600px;
+}
+
+.circle_text_box {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.circle_text_f_color {
+  color: white;
+  /* Основний колір тексту */
+  font-size: 68px;
+  font-weight: bold;
+  font-family: "Rubik Dirt", sans-serif;
+  font-weight: 300;
+}
+
+.circle_text_c_color {
+  font-family: "Rubik Dirt", sans-serif;
+  font-weight: 300;
+  position: absolute;
+  top: 0;
+  left: 0;
+  color: black;
+  /* Колір накладеного тексту */
+  font-size: 68px;
+  font-weight: bold;
+  opacity: 0.5;
+  margin-left: 7.5px;
+  margin-top: 12.5px;
+  /* Налаштуй прозорість для створення ефекту накладання */
+}
+
+.hero_image_box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.hero_image {
+  width: 600px;
+  /* Розмір зображення */
+  height: auto;
 }
