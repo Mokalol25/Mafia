@@ -43,11 +43,10 @@ h4 {
   left: 0;
   width: 100%;
   z-index: 1000;
-  -webkit-backdrop-filter: blur(20px);
-          backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(7px);
+          backdrop-filter: blur(7px);
   -webkit-box-shadow: 0px 0px 30px rgba(227, 228, 237, 0.37);
           box-shadow: 0px 0px 30px rgba(227, 228, 237, 0.37);
-  border: 2px solid rgba(255, 255, 255, 0.18);
 }
 
 .header_box {
@@ -62,7 +61,7 @@ h4 {
       -ms-flex-align: center;
           align-items: center;
   padding-top: 10px;
-  padding-bottom: 10px;
+  padding-bottom: 20px;
   margin-left: 40px;
   margin-right: 40px;
 }
@@ -90,7 +89,9 @@ h4 {
 .hero {
   padding-top: 130px;
   padding-bottom: 50px;
-  background-color: #d6cfcf;
+  height: 975px;
+  background-image: url(../img/ii.png);
+  background-position: center;
 }
 
 .hero_box {
@@ -103,29 +104,10 @@ h4 {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  gap: 100px;
-  /* Відстань між колом і зображенням */
 }
 
-.hero_circle {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  background-color: #ba2020;
-  border-radius: 50%;
-  /* Робить блок круглим */
-  width: 600px;
-  /* Розмір кола */
-  height: 600px;
-}
-
-.circle_text_box {
+.hero_image_box {
+  margin-right: 1000px;
   position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -136,34 +118,45 @@ h4 {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  width: auto;
+  height: auto;
 }
 
-.circle_text_f_color {
-  color: white;
-  /* Основний колір тексту */
-  font-size: 68px;
-  font-weight: bold;
-  font-family: "Rubik Dirt", sans-serif;
-  font-weight: 300;
+.hero_image {
+  position: relative;
+  z-index: 1;
+  /* Зображення зверху */
+  margin-left: 50px;
+  width: 600px;
+  /* Розмір зображення */
+  height: auto;
 }
 
-.circle_text_c_color {
-  font-family: "Rubik Dirt", sans-serif;
-  font-weight: 300;
+/* Блур через border-radius */
+.hero-blur {
   position: absolute;
-  top: 0;
-  left: 0;
-  color: black;
-  /* Колір накладеного тексту */
-  font-size: 68px;
-  font-weight: bold;
-  opacity: 0.5;
-  margin-left: 7.5px;
-  margin-top: 12.5px;
-  /* Налаштуй прозорість для створення ефекту накладання */
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  width: 650px;
+  /* Розмір блур-зони */
+  height: 650px;
+  -webkit-backdrop-filter: blur(7px);
+          backdrop-filter: blur(7px);
+  -webkit-box-shadow: 0px 0px 30px rgba(227, 228, 237, 0.37);
+          box-shadow: 0px 0px 30px rgba(227, 228, 237, 0.37);
+  border-radius: 50%;
+  /* Робить форму блера круглою */
+  z-index: 0;
+  /* Блур під зображенням */
 }
 
-.hero_image_box {
+.circle_text_box {
+  z-index: 1;
+  margin-left: 50px;
+  position: absolute;
+  /* Текст поверх картинки */
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -173,10 +166,31 @@ h4 {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  /* Текст один під одним */
 }
 
-.hero_image {
-  width: 600px;
-  /* Розмір зображення */
-  height: auto;
+.circle_text_f_color {
+  color: white;
+  /* Основний колір тексту */
+  font-size: 150px;
+  font-weight: bold;
+  font-family: "Rubik Dirt", sans-serif;
+}
+
+.circle_text_c_color {
+  font-family: "Rubik Dirt", sans-serif;
+  position: absolute;
+  color: black;
+  /* Колір накладеного тексту */
+  font-size: 150px;
+  font-weight: bold;
+  opacity: 0.5;
+  /* Прозорість для ефекту накладання */
+  -webkit-transform: translate(7.5px, 12.5px);
+          transform: translate(7.5px, 12.5px);
+  /* Зміщення для накладання */
 }

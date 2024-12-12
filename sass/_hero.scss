@@ -1,61 +1,72 @@
 .hero {
     padding-top: 130px;
     padding-bottom: 50px;
-    background-color: rgb(214, 207, 207);
+    height: 975px;
+    background-image: url(../img/ii.png);
+    background-position: center;
 }
+
 .hero_box {
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 100px; /* Відстань між колом і зображенням */
 }
 
-.hero_circle {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: rgb(186, 32, 32);
-    border-radius: 50%; /* Робить блок круглим */
-    width: 600px; /* Розмір кола */
-    height: 600px;
-}
-
-.circle_text_box {
+.hero_image_box {
+    margin-right: 1000px;
     position: relative;
     display: flex;
     justify-content: center;
     align-items: center;
+    width: auto;
+    height: auto;
+}
+
+.hero_image {
+    position: relative;
+    z-index: 1; /* Зображення зверху */
+    margin-left: 50px;
+    width: 600px; /* Розмір зображення */
+    height: auto;
+}
+
+/* Блур через border-radius */
+.hero-blur {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 650px; /* Розмір блур-зони */
+    height: 650px;
+    backdrop-filter: blur(7px);
+    box-shadow: 0px 0px 30px rgba(227, 228, 237, 0.37);
+    border-radius: 50%; /* Робить форму блера круглою */
+    z-index: 0; /* Блур під зображенням */
+}
+
+.circle_text_box {
+    z-index: 1;
+    margin-left: 50px;
+    position: absolute; /* Текст поверх картинки */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column; /* Текст один під одним */
 }
 
 .circle_text_f_color {
     color: white; /* Основний колір тексту */
-    font-size: 68px;
+    font-size: 150px;
     font-weight: bold;
     font-family: "Rubik Dirt", sans-serif;
-    font-weight: 300;
 }
 
 .circle_text_c_color {
     font-family: "Rubik Dirt", sans-serif;
-    font-weight: 300;
     position: absolute;
-    top: 0;
-    left: 0;
     color: black; /* Колір накладеного тексту */
-    font-size: 68px;
+    font-size: 150px;
     font-weight: bold;
-    opacity: 0.5;
-    margin-left: 7.5px;
-    margin-top: 12.5px; /* Налаштуй прозорість для створення ефекту накладання */
-}
-
-.hero_image_box {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.hero_image {
-    width: 600px; /* Розмір зображення */
-    height: auto;
+    opacity: 0.5; /* Прозорість для ефекту накладання */
+    transform: translate(7.5px, 12.5px); /* Зміщення для накладання */
 }
