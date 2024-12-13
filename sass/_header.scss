@@ -21,7 +21,7 @@
 }
 .header_box_logo {
     margin-right: 22.5%;
-    fill: #000;
+    fill: #fff;
 }
 .header_logo {
     width: 150px;
@@ -32,9 +32,35 @@
     font-family: "Rubik Dirt", sans-serif;
     font-weight: 300;
 }
-.header_box_something {
-    margin-right: 45%;
+.header_box_rules {
+    margin-right: 20%;
+    color: #fff;
+    margin-top: 20px;
+}
+.box_rules {
+    font-family: "Ubuntu", serif;
+    font-weight: 300;
+    font-style: normal;
+    font-size: 26px;
+}
+.header_box_ways {
+    color: #fff;
+    margin-top: 20px;
+    margin-right: 20%;
+}
+.box_ways {
+    font-family: "Ubuntu", serif;
+    font-weight: 300;
+    font-style: normal;
+    font-size: 26px;
 }
 .header_box_regestration {
-
+    color: #fff;
+    margin-top: 20px;
+}
+.box_registration {
+    font-family: "Ubuntu", serif;
+    font-weight: 300;
+    font-style: normal;
+    font-size: 26px;
 }
